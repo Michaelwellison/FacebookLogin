@@ -10,6 +10,7 @@
 		D53C58291963D3D000897DA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C58281963D3D000897DA2 /* AppDelegate.swift */; };
 		D53C582B1963D3D000897DA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53C582A1963D3D000897DA2 /* Images.xcassets */; };
 		D53C58371963D3D000897DA2 /* FacebookLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C58361963D3D000897DA2 /* FacebookLoginTests.swift */; };
+		D53C58411963D3F600897DA2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53C58401963D3F600897DA2 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		D53C58301963D3D000897DA2 /* FacebookLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53C58351963D3D000897DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D53C58361963D3D000897DA2 /* FacebookLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginTests.swift; sourceTree = "<group>"; };
+		D53C58401963D3F600897DA2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				D53C58281963D3D000897DA2 /* AppDelegate.swift */,
 				D53C582A1963D3D000897DA2 /* Images.xcassets */,
 				D53C58261963D3D000897DA2 /* Supporting Files */,
+				D53C58401963D3F600897DA2 /* Storyboard.storyboard */,
 			);
 			path = FacebookLogin;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53C582B1963D3D000897DA2 /* Images.xcassets in Resources */,
+				D53C58411963D3F600897DA2 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
