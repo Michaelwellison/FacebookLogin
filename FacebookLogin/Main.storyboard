@@ -115,11 +115,11 @@
             </objects>
             <point key="canvasLocation" x="190" y="357"/>
         </scene>
-        <!--Navigation Controller - Item 1-->
+        <!--Navigation Controller - News Feed-->
         <scene sceneID="o5H-JE-pZP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oLw-On-S8z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="IYi-bN-xv7"/>
+                    <tabBarItem key="tabBarItem" title="News Feed" image="newsFeed" id="IYi-bN-xv7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nKM-rQ-LT0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -134,11 +134,11 @@
             </objects>
             <point key="canvasLocation" x="-506" y="1075"/>
         </scene>
-        <!--Navigation Controller - Item 2-->
+        <!--Navigation Controller - Requests-->
         <scene sceneID="nHE-Cc-0FJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="47U-MC-xez" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="MkB-Mg-2IX"/>
+                    <tabBarItem key="tabBarItem" title="Requests" image="requests" id="MkB-Mg-2IX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M6M-ka-RyF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -153,11 +153,11 @@
             </objects>
             <point key="canvasLocation" x="87" y="1075"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Messages-->
         <scene sceneID="vJd-Te-2dT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oqt-Nt-OM5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qCd-HE-uha"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="messages" id="qCd-HE-uha"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fHW-k9-Pji">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -172,11 +172,11 @@
             </objects>
             <point key="canvasLocation" x="562" y="1075"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Notifications-->
         <scene sceneID="G7K-UE-BnU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="InI-qC-KVn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yQk-J4-LvF"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notifications" id="yQk-J4-LvF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Ys-E8-MLe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -191,11 +191,11 @@
             </objects>
             <point key="canvasLocation" x="1012" y="1075"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - More-->
         <scene sceneID="9ms-FD-aSb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="khx-aa-c26" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1ue-sw-dYE"/>
+                    <tabBarItem key="tabBarItem" title="More" image="more" id="1ue-sw-dYE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jqO-Os-PmS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -211,6 +211,13 @@
             <point key="canvasLocation" x="1447" y="1075"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="messages" width="27" height="27"/>
+        <image name="more" width="27" height="27"/>
+        <image name="newsFeed" width="27" height="27"/>
+        <image name="notifications" width="22" height="22"/>
+        <image name="requests" width="22" height="16"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
