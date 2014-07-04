@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="vNa-rN-Urg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OXJ-gM-GtX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -17,14 +17,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMt-0v-pbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562" y="1639"/>
+            <point key="canvasLocation" x="562" y="1713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qIT-eX-fQQ">
             <objects>
                 <viewController id="kab-Bg-V42" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="197-7R-wZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -32,14 +32,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzJ-dc-bmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="1639"/>
+            <point key="canvasLocation" x="1012" y="1713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9k3-NL-LKB">
             <objects>
                 <viewController id="lTZ-65-D8I" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fgN-jv-8oZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -47,14 +47,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGL-rv-bm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1447" y="1639"/>
+            <point key="canvasLocation" x="1447" y="1713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yJm-M8-fUH">
             <objects>
                 <viewController id="Lii-N0-TKA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GZk-is-38R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -62,25 +62,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYj-aJ-wL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="1639"/>
+            <point key="canvasLocation" x="87" y="1713"/>
         </scene>
         <!--View Controller - News View Controller-->
         <scene sceneID="6aE-Xu-fAT">
             <objects>
                 <viewController title="News View Controller" id="zqR-MI-fDf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nVZ-sz-HUO">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsFeedHeaderImage" id="zfV-5N-ek2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainFeedImage" id="wp8-oy-e4g">
+                                <rect key="frame" x="-111" y="44" width="543" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="News Feed" id="n2o-aT-zO3">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="Sp1-MR-Ltv">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="Sp1-MR-Ltv">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a9r-tG-ieo">
                                 <rect key="frame" x="16" y="9" width="29" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -90,7 +94,7 @@
                             </button>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="qNd-ty-gM2">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="qNd-ty-gM2">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CbN-sR-Wnj">
                                 <rect key="frame" x="255" y="8" width="27" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,26 +107,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf2-zi-Jdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-506" y="1639"/>
+            <point key="canvasLocation" x="-506" y="1713"/>
         </scene>
         <!--View Controller - Login View-->
         <scene sceneID="q6l-CJ-egO">
             <objects>
                 <viewController title="Login View" id="gad-sG-3XQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ymx-Bc-PeK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginButton" id="mNT-2N-fh3">
-                                <rect key="frame" x="14" y="267" width="293" height="52"/>
+                                <rect key="frame" x="14" y="322" width="293" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginForm" id="EY9-RB-YyM">
-                                <rect key="frame" x="13" y="159" width="295" height="95"/>
+                                <rect key="frame" x="13" y="214" width="295" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gY5-8J-dJo">
-                                <rect key="frame" x="83" y="376" width="155" height="30"/>
+                                <rect key="frame" x="83" y="461" width="155" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up  for Facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,7 +134,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qPt-jX-cdP">
-                                <rect key="frame" x="119" y="413" width="82" height="30"/>
+                                <rect key="frame" x="119" y="498" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Help Center">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,7 +142,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookLogo" id="68L-Eo-YKh">
-                                <rect key="frame" x="71" y="77" width="178" height="37"/>
+                                <rect key="frame" x="71" y="137" width="178" height="37"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -275,6 +279,7 @@
         <image name="facebookLogo" width="178" height="37"/>
         <image name="loginButton" width="293" height="52"/>
         <image name="loginForm" width="295" height="95"/>
+        <image name="mainFeedImage" width="320" height="415"/>
         <image name="messages" width="27" height="27"/>
         <image name="more" width="27" height="27"/>
         <image name="newsFeed" width="27" height="27"/>
@@ -287,6 +292,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
