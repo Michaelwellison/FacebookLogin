@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="bQb-Hu-z7g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gad-sG-3XQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
     </dependencies>
@@ -64,20 +64,90 @@
             </objects>
             <point key="canvasLocation" x="87" y="1639"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - News View Controller-->
         <scene sceneID="6aE-Xu-fAT">
             <objects>
-                <viewController id="zqR-MI-fDf" sceneMemberID="viewController">
+                <viewController title="News View Controller" id="zqR-MI-fDf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nVZ-sz-HUO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsFeedHeaderImage" id="zfV-5N-ek2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="n2o-aT-zO3"/>
+                    <navigationItem key="navigationItem" title="News Feed" id="n2o-aT-zO3">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Sp1-MR-Ltv">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a9r-tG-ieo">
+                                <rect key="frame" x="16" y="9" width="29" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="qNd-ty-gM2">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CbN-sR-Wnj">
+                                <rect key="frame" x="255" y="8" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="personMenu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf2-zi-Jdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-506" y="1639"/>
+        </scene>
+        <!--View Controller - Login View-->
+        <scene sceneID="q6l-CJ-egO">
+            <objects>
+                <viewController title="Login View" id="gad-sG-3XQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ymx-Bc-PeK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginButton" id="mNT-2N-fh3">
+                                <rect key="frame" x="14" y="267" width="293" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginForm" id="EY9-RB-YyM">
+                                <rect key="frame" x="13" y="159" width="295" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gY5-8J-dJo">
+                                <rect key="frame" x="83" y="376" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Up  for Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qPt-jX-cdP">
+                                <rect key="frame" x="119" y="413" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Help Center">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookLogo" id="68L-Eo-YKh">
+                                <rect key="frame" x="71" y="77" width="178" height="37"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26666666666666666" green="0.38431372549019605" blue="0.63137254901960782" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HX-HG-vBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241" y="357"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ato-mk-nWO">
@@ -107,9 +177,13 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oLw-On-S8z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="News Feed" image="newsFeed" id="IYi-bN-xv7"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nKM-rQ-LT0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="nKM-rQ-LT0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.26666666666666666" green="0.38431372549019605" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -198,11 +272,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebookLogo" width="178" height="37"/>
+        <image name="loginButton" width="293" height="52"/>
+        <image name="loginForm" width="295" height="95"/>
         <image name="messages" width="27" height="27"/>
         <image name="more" width="27" height="27"/>
         <image name="newsFeed" width="27" height="27"/>
+        <image name="newsFeedHeaderImage" width="320" height="45"/>
         <image name="notifications" width="22" height="22"/>
+        <image name="personMenu" width="24" height="24"/>
         <image name="requests" width="22" height="16"/>
+        <image name="search" width="24" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
