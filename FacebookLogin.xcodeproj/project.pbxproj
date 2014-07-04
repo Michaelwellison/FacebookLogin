@@ -381,6 +381,7 @@
 				D53C583C1963D3D000897DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D53C583D1963D3D000897DA2 /* Build configuration list for PBXNativeTarget "FacebookLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -389,6 +390,7 @@
 				D53C583F1963D3D000897DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
