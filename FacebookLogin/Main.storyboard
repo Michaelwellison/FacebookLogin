@@ -121,10 +121,6 @@
                                 <rect key="frame" x="14" y="322" width="293" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginForm" id="EY9-RB-YyM">
-                                <rect key="frame" x="13" y="214" width="295" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gY5-8J-dJo">
                                 <rect key="frame" x="83" y="461" width="155" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -157,6 +153,16 @@
                                 <rect key="frame" x="71" y="137" width="178" height="37"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="ehY-Os-HxQ">
+                                <rect key="frame" x="15" y="214" width="290" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="BdZ-Uw-80B">
+                                <rect key="frame" x="15" y="262" width="290" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.26666666666666666" green="0.38431372549019605" blue="0.63137254901960782" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -290,7 +296,6 @@
     <resources>
         <image name="facebookLogo" width="178" height="37"/>
         <image name="loginButton" width="293" height="52"/>
-        <image name="loginForm" width="295" height="95"/>
         <image name="mainFeedImage" width="320" height="415"/>
         <image name="messages" width="27" height="27"/>
         <image name="more" width="27" height="27"/>
