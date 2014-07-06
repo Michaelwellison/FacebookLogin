@@ -33,10 +33,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         configureEmailTextField()
         configurePasswordTextField()
         
-    
-        
-       
-
     }
     
     // MARK: Configuration
@@ -74,8 +70,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         var emailFieldInput = String(emailTextField.text)
         var passwordFieldInput = String(passwordTextField.text)
         
-        if emailFieldInput == "michael" && passwordFieldInput == "password" {
+        if emailFieldInput == "hey" && passwordFieldInput == "hey" {
             println("Success!")
+            
         } else {
             println("Error")
         }
@@ -92,14 +89,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.tag = 1
     }
     
+    // Function to create a delay method that is easy to re-use
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+    
     // MARK: UITextFieldDelegate
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
         println("TextFieldChanged")
-        logInButton.enabled = true
         
+        if emailTextField.text != "" && passwordTextField.text != "" {
         
+            logInButton.enabled = true
+        } else {
+            logInButton.enabled = false
+        }
         
         
         return true
@@ -117,8 +128,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onEmailTextField(sender: AnyObject) {
         moveLoginContentViews()
-        
-        
     }
 
     
@@ -134,12 +143,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onLoginButton(sender: AnyObject) {
         loadingView.startAnimating()
-        userEmailAndPasswordCheck()
         
-        
-      
-    
-        
+        delay(3.0, closure: {
+            self.loadingView.stopAnimating()
+            self.userEmailAndPasswordCheck()
+            })
     }
     
     

@@ -184,7 +184,7 @@
                                         <rect key="frame" x="6" y="148" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                         <connections>
                                             <action selector="onPasswordTextField:" destination="gad-sG-3XQ" eventType="editingDidBegin" id="rMd-EZ-XjC"/>
                                         </connections>
