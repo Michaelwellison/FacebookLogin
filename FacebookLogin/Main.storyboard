@@ -151,16 +151,19 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eos-zV-iHB">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="eos-zV-iHB">
                                         <rect key="frame" x="0.0" y="199" width="290" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="deviceRGB"/>
                                         <state key="normal" title="Log In">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onLoginButton:" destination="gad-sG-3XQ" eventType="touchUpInside" id="wEc-df-4dB"/>
+                                        </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email or phone number" minimumFontSize="17" id="VaO-Mj-NjF">
-                                        <rect key="frame" x="5" y="99" width="280" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email or phone number" minimumFontSize="17" id="VaO-Mj-NjF">
+                                        <rect key="frame" x="6" y="102" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -168,27 +171,45 @@
                                             <action selector="onEmailTextField:" destination="gad-sG-3XQ" eventType="editingDidBegin" id="oku-fS-SjP"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="9Sa-Hi-MMJ">
-                                        <rect key="frame" x="5" y="145" width="280" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" id="9Sa-Hi-MMJ">
+                                        <rect key="frame" x="6" y="148" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="onPasswordTextField:" destination="gad-sG-3XQ" eventType="editingDidBegin" id="rMd-EZ-XjC"/>
+                                        </connections>
                                     </textField>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" id="2wu-AL-CAC">
+                                        <rect key="frame" x="220" y="214" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.26666666666666666" green="0.38431372549019605" blue="0.63137254901960782" alpha="1" colorSpace="deviceRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="OR6-ra-KEf" appends="YES" id="g7t-g9-REv"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="VaO-Mj-NjF" id="J3h-PY-er6"/>
+                        <outlet property="loadingView" destination="2wu-AL-CAC" id="3kI-5m-066"/>
                         <outlet property="logInButton" destination="eos-zV-iHB" id="lzI-1h-U9b"/>
                         <outlet property="loginContentView" destination="0HJ-KD-4r2" id="SpR-3v-IZU"/>
                         <outlet property="passwordTextField" destination="9Sa-Hi-MMJ" id="mdU-E4-GgE"/>
                         <outlet property="signUpButton" destination="gY5-8J-dJo" id="ebT-aa-JoC"/>
+                        <outlet property="textFieldView" destination="ehY-Os-HxQ" id="J9s-CX-xbf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HX-HG-vBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OR6-ra-KEf">
+                    <connections>
+                        <action selector="endEditing:" destination="gad-sG-3XQ" id="g8c-y1-Wp8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-241" y="357"/>
         </scene>

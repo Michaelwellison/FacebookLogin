@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField
     @IBOutlet var logInButton: UIButton
     @IBOutlet var signUpButton: UIButton
+    @IBOutlet var textFieldView: UIView
+    @IBOutlet var loadingView: UIActivityIndicatorView
     
 
     
@@ -24,24 +26,77 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        configureLoginInButton()
+        ConfigureTextFieldView()
+        
     }
     
     // MARK: Configuration
     
     func moveLoginContentViews() {
-        loginContentView.frame = CGRectMake(15, 20, 291, 249)
-        signUpButton.frame = CGRectMake(83, 285, 155, 30)
-        
+
+        UIView.animateWithDuration(0.5, animations: {
+            self.loginContentView.frame = CGRectMake(15, 20, 291, 249)
+            self.signUpButton.frame = CGRectMake(83, 285, 155, 30)
+            })
+    }
+    
+    func moveBackLoginContentViews() {
+        UIView.animateWithDuration(0.5, animations: {
+            self.loginContentView.frame = CGRectMake(15, 125, 291, 249)
+            self.signUpButton.frame = CGRectMake(86, 461, 150, 30)
+            })
     }
 
     
+    // MARK: Configuration
+    
+    func ConfigureTextFieldView() {
+        textFieldView.layer.cornerRadius = 3
+    }
+    
+    func configureLoginInButton() {
+        logInButton.layer.cornerRadius = 3
+        
+    }
+    
+    func userEmailAndPasswordCheck() {
+        
+        var emailFieldInput = String(emailTextField.text)
+        var passwordFieldInput = String(passwordTextField.text)
+        
+        if emailFieldInput == "michael" && passwordFieldInput == "password" {
+            println("Success!")
+        } else {
+            println("Error")
+        }
+    }
     
     // MARK: Actions
     
     @IBAction func onEmailTextField(sender: AnyObject) {
         moveLoginContentViews()
+    }
+
+    
+    
+    @IBAction func onPasswordTextField(sender: AnyObject) {
+        moveLoginContentViews()
+    }
+    
+    @IBAction func endEditing(sender: AnyObject) {
+        view.endEditing(true)
+        moveBackLoginContentViews()
+    }
+    
+    @IBAction func onLoginButton(sender: AnyObject) {
+        loadingView.startAnimating()
+        userEmailAndPasswordCheck()
+        
+      
+    
+        
     }
     
     
