@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Properties
     
@@ -27,9 +27,16 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureLoginInButton()
-        ConfigureTextFieldView()
         
+        configureLoginInButton()
+        configureTextFieldView()
+        configureEmailTextField()
+        configurePasswordTextField()
+        
+    
+        
+       
+
     }
     
     // MARK: Configuration
@@ -52,12 +59,13 @@ class LoginViewController: UIViewController {
     
     // MARK: Configuration
     
-    func ConfigureTextFieldView() {
+    func configureTextFieldView() {
         textFieldView.layer.cornerRadius = 3
     }
     
     func configureLoginInButton() {
         logInButton.layer.cornerRadius = 3
+        logInButton.enabled = false
         
     }
     
@@ -73,10 +81,44 @@ class LoginViewController: UIViewController {
         }
     }
     
+    func configureEmailTextField() {
+        
+        emailTextField.delegate = self
+        emailTextField.tag = 0
+    }
+    
+    func configurePasswordTextField() {
+        passwordTextField.delegate = self
+        passwordTextField.tag = 1
+    }
+    
+    // MARK: UITextFieldDelegate
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        println("TextFieldChanged")
+        logInButton.enabled = true
+        
+        
+        
+        
+        return true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+       
+        println("Text Field Should Return")
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
     // MARK: Actions
     
     @IBAction func onEmailTextField(sender: AnyObject) {
         moveLoginContentViews()
+        
+        
     }
 
     
@@ -93,6 +135,7 @@ class LoginViewController: UIViewController {
     @IBAction func onLoginButton(sender: AnyObject) {
         loadingView.startAnimating()
         userEmailAndPasswordCheck()
+        
         
       
     
