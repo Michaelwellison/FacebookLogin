@@ -12,6 +12,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Properties
     
+    
+    
     @IBOutlet var loginContentView: UIView
     @IBOutlet var emailTextField: UITextField
     @IBOutlet var passwordTextField: UITextField
@@ -20,7 +22,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var textFieldView: UIView
     @IBOutlet var loadingView: UIActivityIndicatorView
     
-
+    
     
     // MARK: View Lifecycle
 
@@ -32,6 +34,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         configureTextFieldView()
         configureEmailTextField()
         configurePasswordTextField()
+        
+        
         
     }
     
@@ -70,10 +74,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         var emailFieldInput = String(emailTextField.text)
         var passwordFieldInput = String(passwordTextField.text)
         
-        if emailFieldInput == "hey" && passwordFieldInput == "hey" {
+        if emailFieldInput == "hey" && passwordFieldInput == "password" {
             println("Success!")
             
         } else {
+            
+            var errorView = UIAlertController(title: "Incorrect Password", message: "Please enter the correct password", preferredStyle: UIAlertControllerStyle.Alert)
+            errorView.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(errorView, animated: true, completion: nil)
+            
             println("Error")
         }
     }
@@ -128,6 +137,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onEmailTextField(sender: AnyObject) {
         moveLoginContentViews()
+    
     }
 
     
