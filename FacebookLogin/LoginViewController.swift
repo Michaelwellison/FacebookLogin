@@ -74,7 +74,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         var emailFieldInput = String(emailTextField.text)
         var passwordFieldInput = String(passwordTextField.text)
         
-        if emailFieldInput == "hey" && passwordFieldInput == "password" {
+        if emailFieldInput == "michaelwellison@gmail.com" && passwordFieldInput == "password" {
             
             self.performSegueWithIdentifier("LogIn", sender: self)
             println("Success!")
