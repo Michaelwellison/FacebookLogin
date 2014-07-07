@@ -12,6 +12,9 @@ class NewsFeedViewController: UIViewController {
 
     @IBOutlet var mainFeedImage: UIImageView
     @IBOutlet var loadingView: UIActivityIndicatorView
+   
+    @IBOutlet var scrollView: UIScrollView
+    @IBOutlet var statusButton: UIButton
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,11 @@ class NewsFeedViewController: UIViewController {
         
     }
     
+    func configureScrollView() {
+        self.scrollView.contentSize = self.mainFeedImage.image.size
+        
+    }
+
     // Function to create a delay method that is easy to re-use
     func delay(delay:Double, closure:()->()) {
         dispatch_after(
@@ -44,6 +52,11 @@ class NewsFeedViewController: UIViewController {
             dispatch_get_main_queue(), closure)
     }
 
+
+    @IBAction func onComposeButton(sender: AnyObject) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

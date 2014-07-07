@@ -28,22 +28,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+    
         configureLoginInButton()
         configureTextFieldView()
         configureEmailTextField()
         configurePasswordTextField()
-        
-        
-        
     }
     
     // MARK: Configuration
     
     func moveLoginContentViews() {
 
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animateWithDuration(0.25, animations: {
             self.loginContentView.frame = CGRectMake(15, 20, 291, 249)
             self.signUpButton.frame = CGRectMake(83, 285, 155, 30)
             })
@@ -81,7 +77,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
         } else {
             
-            var errorView = UIAlertController(title: "Incorrect Password", message: "The password you entered is incorrect. Please try again.", preferredStyle: UIAlertControllerStyle.Alert)
+            var errorView = UIAlertController(title: "Incorrect Password", message: "The password or username you entered is incorrect. Please try again.", preferredStyle: UIAlertControllerStyle.Alert)
             errorView.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(errorView, animated: true, completion: nil)
             
@@ -151,9 +147,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onLoginButton(sender: AnyObject) {
         loadingView.startAnimating()
+        logInButton.selected = true
         
         delay(3.0, closure: {
             self.loadingView.stopAnimating()
+            self.logInButton.selected = false
             self.userEmailAndPasswordCheck()
             })
     }
