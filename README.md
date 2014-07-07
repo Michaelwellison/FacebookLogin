@@ -31,4 +31,4 @@ More
 * Every other time, display an error message (optional)
 
 
-http://imgur.com/ooYyR6z
+<a href="http://imgur.com/ooYyR6z"><img src="http://i.imgur.com/ooYyR6z.gif" title="Hosted by imgur.com" /></a>
