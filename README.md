@@ -14,6 +14,7 @@ Facebook login page
 * After tapping log in button, show the loading indicator in the button. After a 2 second delay, check the password.
   * If the password is 'password', transition to the next screen.
   * If the password is anything else, display the password error alert.
+
 Facebook feed
 * Navigation bar should have the search button and messages button.
 * Immediately after launch, display the loading indicator.
@@ -23,6 +24,7 @@ Did not complete the optional stories:
 Facebook Feed
 * Tapping the status button should show the compose view w/ the keyboard (optional)
 * Tapping a profile picture should push a profile page (optional)
+
 More
 * Add a scrollable view of the "More" page. (optional)
 * Upon tapping Log Out, return to the login screen. (optional)
