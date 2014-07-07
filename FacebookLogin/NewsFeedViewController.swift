@@ -20,6 +20,7 @@ class NewsFeedViewController: UIViewController {
         super.viewDidLoad()
         
         configureNewsFeedMainImage()
+        scrollView.scrollEnabled = true
 
         // Do any additional setup after loading the view.
     }
