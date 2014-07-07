@@ -75,11 +75,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         var passwordFieldInput = String(passwordTextField.text)
         
         if emailFieldInput == "hey" && passwordFieldInput == "password" {
+            
+            self.performSegueWithIdentifier("LogIn", sender: self)
             println("Success!")
             
         } else {
             
-            var errorView = UIAlertController(title: "Incorrect Password", message: "Please enter the correct password", preferredStyle: UIAlertControllerStyle.Alert)
+            var errorView = UIAlertController(title: "Incorrect Password", message: "The password you entered is incorrect. Please try again.", preferredStyle: UIAlertControllerStyle.Alert)
             errorView.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(errorView, animated: true, completion: nil)
             
@@ -90,12 +92,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func configureEmailTextField() {
         
         emailTextField.delegate = self
-        emailTextField.tag = 0
     }
     
     func configurePasswordTextField() {
         passwordTextField.delegate = self
-        passwordTextField.tag = 1
     }
     
     // Function to create a delay method that is easy to re-use
@@ -115,7 +115,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         println("TextFieldChanged")
         
         if emailTextField.text != "" && passwordTextField.text != "" {
-        
+            
             logInButton.enabled = true
         } else {
             logInButton.enabled = false
@@ -139,8 +139,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         moveLoginContentViews()
     
     }
-
-    
     
     @IBAction func onPasswordTextField(sender: AnyObject) {
         moveLoginContentViews()
@@ -167,6 +165,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // MARK: Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if segue.identifier == "LogIn" {
+            
+            
+        }
+        
+    }
 
     /*
     // #pragma mark - Navigation

@@ -12,6 +12,7 @@
 		D53C58371963D3D000897DA2 /* FacebookLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C58361963D3D000897DA2 /* FacebookLoginTests.swift */; };
 		D53C58411963D3F600897DA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53C58401963D3F600897DA2 /* Main.storyboard */; };
 		D540988A1968CBE000166190 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54098891968CBE000166190 /* LoginViewController.swift */; };
+		D5AE19A0196A1F030081A0C5 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE199F196A1F030081A0C5 /* NewsFeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		D53C58361963D3D000897DA2 /* FacebookLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginTests.swift; sourceTree = "<group>"; };
 		D53C58401963D3F600897DA2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D54098891968CBE000166190 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D5AE199F196A1F030081A0C5 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 			children = (
 				D53C58281963D3D000897DA2 /* AppDelegate.swift */,
 				D54098891968CBE000166190 /* LoginViewController.swift */,
-				D53C582A1963D3D000897DA2 /* Images.xcassets */,
+				D5AE199F196A1F030081A0C5 /* NewsFeedViewController.swift */,
 				D53C58401963D3F600897DA2 /* Main.storyboard */,
+				D53C582A1963D3D000897DA2 /* Images.xcassets */,
 				D53C58261963D3D000897DA2 /* Supporting Files */,
 			);
 			path = FacebookLogin;
@@ -209,6 +212,7 @@
 			files = (
 				D540988A1968CBE000166190 /* LoginViewController.swift in Sources */,
 				D53C58291963D3D000897DA2 /* AppDelegate.swift in Sources */,
+				D5AE19A0196A1F030081A0C5 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

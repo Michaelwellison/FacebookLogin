@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="87" y="1713"/>
         </scene>
-        <!--View Controller - News View Controller-->
+        <!--News Feed View Controller - News View Controller-->
         <scene sceneID="6aE-Xu-fAT">
             <objects>
-                <viewController title="News View Controller" id="zqR-MI-fDf" sceneMemberID="viewController">
+                <viewController title="News View Controller" id="zqR-MI-fDf" customClass="NewsFeedViewController" customModule="FacebookLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nVZ-sz-HUO">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,6 +211,7 @@
                         <outlet property="passwordTextField" destination="9Sa-Hi-MMJ" id="mdU-E4-GgE"/>
                         <outlet property="signUpButton" destination="gY5-8J-dJo" id="ebT-aa-JoC"/>
                         <outlet property="textFieldView" destination="ehY-Os-HxQ" id="J9s-CX-xbf"/>
+                        <segue destination="bQb-Hu-z7g" kind="modal" identifier="LogIn" modalTransitionStyle="flipHorizontal" id="njw-5b-3NV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HX-HG-vBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,12 +221,13 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-241" y="357"/>
+            <point key="canvasLocation" x="-245" y="357"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ato-mk-nWO">
             <objects>
                 <tabBarController id="bQb-Hu-z7g" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="012-a4-Akm"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="2xx-2S-AZ1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
