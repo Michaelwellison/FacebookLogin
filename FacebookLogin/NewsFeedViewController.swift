@@ -20,7 +20,8 @@ class NewsFeedViewController: UIViewController {
         super.viewDidLoad()
         
         configureNewsFeedMainImage()
-        scrollView.scrollEnabled = true
+        
+        configureScrollView()
 
         // Do any additional setup after loading the view.
     }
@@ -40,7 +41,7 @@ class NewsFeedViewController: UIViewController {
     
     func configureScrollView() {
         self.scrollView.contentSize = self.mainFeedImage.image.size
-        
+        scrollView.scrollEnabled = true
     }
 
     // Function to create a delay method that is easy to re-use
