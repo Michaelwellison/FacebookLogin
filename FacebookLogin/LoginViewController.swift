@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import MessageUI
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Properties
-    
     
     
     @IBOutlet var loginContentView: UIView
@@ -22,6 +22,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var textFieldView: UIView
     @IBOutlet var loadingView: UIActivityIndicatorView
     
+
     
     
     // MARK: View Lifecycle
@@ -155,7 +156,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.userEmailAndPasswordCheck()
             })
     }
-    
     
     
     override func didReceiveMemoryWarning() {

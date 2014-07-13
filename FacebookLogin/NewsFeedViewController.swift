@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import MessageUI
 
 class NewsFeedViewController: UIViewController {
 
+    
     @IBOutlet var mainFeedImage: UIImageView
     @IBOutlet var loadingView: UIActivityIndicatorView
    
     @IBOutlet var scrollView: UIScrollView
     @IBOutlet var statusButton: UIButton
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,6 +60,9 @@ class NewsFeedViewController: UIViewController {
 
 
     @IBAction func onComposeButton(sender: AnyObject) {
+        println("just pressed the button")
+        
+     
         
     }
     
